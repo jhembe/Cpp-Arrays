@@ -21,16 +21,23 @@ int main(){
         cout<<"Enter the [ "<< i+1<<"]  : ";
         cin>> numbers[i]; 
     }
+
+    // print the unsorted arrays
+    cout<<"Unsorted Array : ";
+    for(int i {0}; i < n; i++){
+        cout<<numbers[i]<<"\t";
+    }
+    cout<<endl;
     // Now lets enter the loop logic using while loop
     for(int i {0}; i < n; i++){
         // 
-        if(numbers[0] > numbers[i]){
+        if(numbers[0] < numbers[i]){
             numbers[0] = numbers[i];
         }
 
     }
 
-    cout<<numbers[0];
+    cout<<"The largest element is : "<<numbers[0]<<endl;
 
     return 0;
 }
