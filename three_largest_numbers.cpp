@@ -2,10 +2,12 @@
 using namespace std;
 
 int main(){
-    int array[100];
+    
     int n,i,j;
+    int array[100];
     int temp;
 
+  
     //read the total number of elements
     cout<<"Enter total number of elements to read : ";
     cin>>n;
@@ -35,7 +37,7 @@ int main(){
     // for loop again
     for(i = 0; i<n;i++){
         for(j = i + 1; j < n; j++){
-            if(array[i] > array[j]){
+            if(array[i] < array[j]){
                 temp = array[i];
                 array[i] = array[j];
                 array[j] = temp;
@@ -45,7 +47,7 @@ int main(){
 
     // now printing the sorted array in ascending order
     // we stillusing the for loop
-    for(i=0; i<n; i++){
+    for(i=0; i<=2; i++){
         cout<<array[i]<<"\t";
     }
     cout<<endl;
