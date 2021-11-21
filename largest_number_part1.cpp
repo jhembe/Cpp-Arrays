@@ -16,6 +16,11 @@ int main(){
         return -1;
     }
 
+    // now a for loop to enter data into the array
+    for(int i {0}; i < n; i++){
+        cout<<"Enter the [ "<< i+1<<"]  : ";
+        cin>> numbers[i]; 
+    }
     // Now lets enter the loop logic using while loop
     for(int i {0}; i < n; i++){
         // 
