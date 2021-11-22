@@ -38,8 +38,8 @@ int main(){
 
     // now we sorting in an ascending order
     // for loop again
-    for(i = 0; i<n;i++){
-        for(j = i + 1; j < n; j++){
+    for(int i {0}; i < n; i++){
+        for(int j {i + 1}; j < n; j++){
             if(array[i] < array[j]){
                 temp = array[i];
                 array[i] = array[j];
